@@ -24,9 +24,12 @@
               "src/assets"
             ],
             "styles": [
+              "src/custom-theme.scss",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/chart.js/dist/chart.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -116,9 +119,16 @@
               "devServerTarget": "GeorgioBitar:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }
   },
-  "defaultProject": "GeorgioBitar"
+  "defaultProject": "GeorgioBitar",
+  "cli": {
+    "analytics": "6c28e862-5d9a-4d7d-9fc9-d763b2cb475f"
+  }
 }
