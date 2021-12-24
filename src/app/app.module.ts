@@ -15,10 +15,11 @@ import { MdbPopoverModule } from 'mdb-angular-ui-kit/popover';
 import { MdbRadioModule } from 'mdb-angular-ui-kit/radio';
 import { MdbRangeModule } from 'mdb-angular-ui-kit/range';
 import { MdbRippleModule } from 'mdb-angular-ui-kit/ripple';
-import { MdbScrollspyModule } from 'mdb-angular-ui-kit/scrollspy';
+import { MdbScrollspyLinkDirective, MdbScrollspyModule } from 'mdb-angular-ui-kit/scrollspy';
 import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
+import {MDBBootstrapModule, MdbIconComponent} from 'angular-bootstrap-md'
 
 @NgModule({
   declarations: [
@@ -27,24 +28,7 @@ import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatSidenavModule,
-    MdbAccordionModule,
-    MdbCarouselModule,
-    MdbCheckboxModule,
-    MdbCollapseModule,
-    MdbDropdownModule,
-    MdbFormsModule,
-    MdbModalModule,
-    MdbPopoverModule,
-    MdbRadioModule,
-    MdbRangeModule,
-    MdbRippleModule,
-    MdbScrollspyModule,
-    MdbTabsModule,
-    MdbTooltipModule,
-    MdbValidationModule,
-
-  ],
+      ],
   providers: [],
   bootstrap: [AppComponent]
 })
